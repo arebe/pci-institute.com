@@ -7,15 +7,17 @@ Note: Please do not remove the footer backlink (webthemez.com)--(if you want to 
 Licence: Creative Commons Attribution 3.0** - http://creativecommons.org/licenses/by/3.0/
 */
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700);
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: normal;
 }
 /*General*/
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
-    font-family: 'Lato', sans-serif;
+    font-family: 'PT Serif', serif;
 }
 
 h1, .h1, h2, .h2, h3, .h3 {
@@ -50,7 +52,7 @@ label {
     color: white;
     font-weight: 300;
     position: relative;
-    border-top: 1px solid #0b9ff3;
+    border-top: 1px solid #8c0515;
     background-position-x: center;
 }
 
@@ -155,12 +157,12 @@ label {
 
         .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
             background: none;
-            color: #0b9ff3 !important;
+            color: #8c0515 !important;
         }
 
     .navbar-inverse .navbar-nav > .active > a {
         background: none;
-        color: #0b9ff3;
+        color: #8c0515;
     }
 
     .navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-nav > .open ul > a {
@@ -178,7 +180,7 @@ label {
     .h-caption i {
         display: block;
         font-size: 54px;
-        color: #0b9ff3;
+        color: #8c0515;
         margin-bottom: 36px;
     }
 
@@ -306,8 +308,8 @@ img {
     .featured-box i {
         position: absolute;
         display: inline-block;
-        color: #0b9ff3;
-        border: solid 2px #0b9ff3;
+        color: #8c0515;
+        border: solid 2px #8c0515;
         background: #fff;
         padding: 0px;
         border-radius: 50px;
@@ -336,7 +338,7 @@ footer {
     }
 
         .social a:hover {
-            color: #0b9ff3;
+            color: #8c0515;
         }
 /* Footer */
 .footer1 {
@@ -392,7 +394,7 @@ footer {
     .follow-me-icons i {
         float: left;
         margin: 0 10px 0 0;
-        color: #0b9ff3;
+        color: #8c0515;
     }
 
 .footer2 {
@@ -423,7 +425,7 @@ footer {
     }
 
 #services .fa {
-    color: #0b9ff3;
+    color: #8c0515;
 }
 /* carousel */
 #quote-carousel {
@@ -534,13 +536,13 @@ nav#filter {
     nav#filter a {
         padding: 4px 12px;
         line-height: 20px;
-        border: 1px solid #00bfff;
+        border: 1px solid #bd071c;
         text-decoration: none;
-        color: #00bfff;
+        color: #bd071c;
     }
 
         nav#filter a.current {
-            background: #00bfff;
+            background: #bd071c;
             color: #fff;
         }
 
@@ -661,7 +663,7 @@ nav#filter {
 
 .da-dots span.da-dots-current:after {
     content: '';
-    background: #0b9ff3;
+    background: #8c0515;
 }
 
 .team-member {
@@ -700,7 +702,7 @@ nav#filter {
     }
 
         .team-socials i:hover {
-            color: #0b9ff3;
+            color: #8c0515;
         }
 
 .team-member h4 {
@@ -722,7 +724,7 @@ nav#filter {
     min-height: 100px;
     padding-top: 0px;
     background: #181015 url(../images/bg_header.jpg) 0px -232px no-repeat;
-    background: #0b9ff3;
+    background: #8c0515;
     background-size: cover;
     text-align: left;
 }
@@ -781,11 +783,11 @@ nav#filter {
         }
 
             .flat .plan.featured:hover li.plan-name, .flat .plan:hover li.plan-name, .flat .plan.featured.plan-name {
-                background: #00bfff !important;
+                background: #bd071c !important;
             }
 
 .btn {
-    background: #00bfff;
+    background: #bd071c;
     color: #fff;
 }
 .footer2 a {

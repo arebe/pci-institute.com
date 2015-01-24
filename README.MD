@@ -3,7 +3,7 @@ Proprietary Career Institute
 
 *Created by*: Rachel B [arebe.us](http://arebe.us) and Team 7 
 
-*Prototype Website*: [pci-institute.com](http://pci-institute.com)
+*Website*: [pci-institute.com](http://pci-institute.com)
 
 What's all this?
 ----------------
