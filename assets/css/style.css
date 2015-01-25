@@ -322,6 +322,35 @@ img {
         line-height: 60px;
     }
 
+.featured-list{
+    padding: 10px;
+    margin-bottom: 4px;
+}
+    .featured-list .text {
+        padding-left: 40px;
+    }
+
+    .featured-list h3 {
+        margin: 0 0 5px 0;
+    }
+
+    .featured-list i {
+        position: absolute;
+        display: inline-block;
+        color: #8c0515;
+        border: solid 1px #8c0515;
+        background: #fff;
+        padding: 0px;
+        border-radius: 25px;
+        width: 12px;
+        height: 12px;
+        margin: 0px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+    }
+
 footer {
     border-top: 1px solid #e5e5e5;
     background: #ECECEC;
