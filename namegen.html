@@ -60,10 +60,33 @@
         <div class="row">
             <!-- main content -->
             <section class="col-sm-9 maincontent">
-            	<h2>Craft a unique name for your next business endeavor and ensure success!</h2>
+            	<h2>Craft a unique name for your next educational endeavor and ensure success!</h2>
 		
 		        <div class="featured-box">
-					<p>Name generator stuff here</p>
+					<script>
+						// Name components.
+						var name_components = [
+							["Coastal","Woodland","Midwest","Northwest","Eastern","Industrial","Southeast","Southwest","Northeast","Southern","Missouri Valley","Accredited","American","National","Legacy","InterContinental","Grand Canyon","Florida","Alabama","North-Central Georgia","California","Coastal Arizona","Scholarly","ABC","Lazurus","Green","Red","Yellow","First","Second","Third","Practical","Honorary","Penultimate","Green Island","Cliff Lakes","Country","City","County","Artisanal","International","Michaelangelo","Today's","Future","Present","Pine Grove","Peachtree"],
+							["Technical","Beauty","Career","Vocational","Success","Upstairs","","","","","",""],
+							["Center","Institution","College","Academy","School","University","Institute"],
+							["of Business","of Careers","of Technology","of Cosmetology","of Spa Technology","of Beauty and Barbering","of Accupuncture and Massage","for Medical Technology","of Video Game Design","for Broadcasting","of the Caribbean","of Refrigeration, The","for Marsupial Studies","of Mortuary Sciences","for Marijuana Entrepreneurship","of Cinematic Experimentation","for the Advancement of Oenology"]
+						];
+
+						// Function to generate a new name.
+						generate_name = function() {
+							var new_name_pieces = [];
+							for (var c=0; c < name_components.length; c++) {
+								var random_index = Math.floor(Math.random()*name_components[c].length);
+								var component = name_components[c][random_index];
+								if (component !== "")
+									new_name_pieces.push(component)
+							}
+							var name = new_name_pieces.join(" ");
+							$("#new_name").text(name);
+						}
+					</script>
+					<p style="text-align: center;"><button type="button" class="btn btn-default btn-lg" onclick="generate_name()">Generate a Name</button></p>
+					<p id="new_name" style="text-align: center; font-weight: bold; font-size: 120%;">&nbsp;</p>
 				</div>
 			</section>
 
