@@ -3,14 +3,14 @@
 // [cf: Communications of the ACM, Vol. 9, #1 (January 1966): p 36-45.]
 
 var elizaInitials = [
-"How do you do.  Please tell me your problem.",
+"How do you do.  Please tell me about your wish to align your education with a meaningful career.",
 // additions (not original)
-"Please tell me what's been bothering you.",
-"Is something troubling you ?"
+"Please tell me what excites you about for-profit education.",
+"Is something troubling you?  We hope that starting a for-profit university will make your fears disappear."
 ];
 
 var elizaFinals = [
-"Goodbye.  It was nice talking to you.",
+"Goodbye.  It was nice talking to you.  We hope you will consider an investment in your future.",
 // additions (not original)
 "Goodbye.  This was really a nice talk.",
 "Goodbye.  I'm looking forward to our next session.",
@@ -223,25 +223,72 @@ var elizaKeywords = [
 ]],
 ["xforeign", 0, [
  ["*", [
-     "I speak only English."
+     "I speak only English, but you may teach your students whatever languages you wish."
   ]]
 ]],
 ["hello", 0, [
  ["*", [
-     "How do you do.  Please state your problem.",
-     "Hi.  What seems to be your problem ?"
+     "How do you do.  Are you interested in a career-focused educational experience at PCI?",
+     "Hi.  What would you like to know about starting a for-profit college, university, or institute?",
+     "Hello.  Are you interested in a ground floor investment opportunity in for-profit education?"
   ]]
 ]],
 ["computer", 50, [
  ["*", [
      "Do computers worry you ?",
-     "Why do you mention computers ?",
-     "What do you think machines have to do with your problem ?",
+     "Why do you mention computers ? We should discuss our admissions process and how to get started.",
+     "What do you think machines have to do with your problem ? Let's discuss financial aid options instead.",
      "Don't you think computers can help people ?",
      "What about machines worries you ?",
-     "What do you think about machines ?",
      "You don't think I am a computer program, do you ?"
   ]]
+]],
+["loan", 20, [
+ ["*", [
+     "The federal government will lend you all that you need to invest in your future at PCI. We will help make sure you pay at least some of it back.",
+     "Almost anyone can apply for federal student loan aid.",
+     "Our admissions officers will quickly walk you through loan fees and sign you up so you can start as soon as possible. Act now: classes are filling up fast.",
+     "As a for-profit college, we work hard to ensure that 80% of our students can make at least bare-minimum loan payments for a short period of time.",
+     "Don't make a mistake on your FAFSA and accidentally report any recent inheritance (or any other income or assets of any sort).",
+     "College loans are not like car loans. Nobody is going to \"come after you\" if you don't pay them back."
+  ]]
+]],
+["financial", 20, [
+ ["*", ["goto loan"]]
+]],
+["aid", 20, [
+ ["*", ["goto loan"]]
+]],
+["repay", 20, [
+ ["*", ["goto loan"]]
+]],
+["contact", 20, [
+ ["*",
+     "Visit our \"Contact\" page to continue our conversation and learn more about this great investment opportunity.",
+     "Follow us on Twitter for 140-character insights about how to align your education with a meaningful career."
+ ] 
+]],
+["email", 20, [
+ ["*", ["goto contact"]]
+]],
+["data", 20, [
+ ["*",
+     "Graduation rates and other disclosures are available in PDF format. You may find them somewhere on our website.",
+     "We release data about our graduates' success in the workforce in a manner technically consistent with federal law.",
+     "Sorry, I cannot seem to find our federal disclosure materials. But rest assured: we make them available \"clearly and conspicuously\" as required by law."
+ ] 
+]],
+["disclosure", 20, [
+ ["*", ["goto data"]]
+]],
+["course", 20, [
+ ["*",
+     "Our curriculum will teach you how to structure your finances to capture the largest amount of public funds.",
+     "Our writing center empowers students to craft beautifully vague copy for all of their marketing needs."
+ ] 
+]],
+["class", 20, [
+ ["*", ["goto course"]]
 ]],
 ["am", 0, [
  ["* am i *", [
