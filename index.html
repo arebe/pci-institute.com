@@ -93,7 +93,7 @@ function elizaStep() {
 	}
 	else if (elizaLines.length == 0) {
 		// no input and no saved lines -> output initial
-		var initial = 'ELIZA: ' + eliza.getInitial();
+		var initial = 'TOBY: ' + eliza.getInitial();
 		elizaLines.push(initial);
 		f.e_display.value = initial + '\n';
 	}
@@ -178,7 +178,7 @@ function elizaStep() {
 				<!-- toby bot -->
 
 				<div class="row featured-box">
-                    <div class="col-md-3 col-sm-3 col-xs-3">
+                    <div class="col-md-3 col-sm-2 col-xs-2">
                         <!-- Team Member -->
                         <div class="team-member toby">
                             <!-- Image Hover Block -->
@@ -191,15 +191,16 @@ function elizaStep() {
                     
                 
 
-					<div class="chatbot">
+                    <div class="col-md-9 col-sm-9 col-xs-11 chatbot">
 						<CENTER>
 						<P>&nbsp;</P>
 						<H3>Chat with Toby!</H3>
+						<p>Our expert advisor is here to answer all of your questions about starting your new career.</p>
 						<TABLE BORDER="0" CELLSPACING="10" CELLPADDING="0">
 						<FORM NAME="e_form" onsubmit="elizaStep();return false">
-						<TR><TD COLSPAN="2"><TEXTAREA NAME="e_display" COLS="60" ROWS="18"></TEXTAREA></TD></TR>
+						<TR><TD COLSPAN="2"><TEXTAREA NAME="e_display" COLS="40" ROWS="15"></TEXTAREA></TD></TR>
 						<TR VALIGN="middle">
-							<TD><INPUT TYPE="text" NAME="e_input" SIZE="50"></TD>
+							<TD><INPUT TYPE="text" NAME="e_input" SIZE="30"></TD>
 							<TD ALIGN="right"><INPUT TYPE="submit" VALUE="&nbsp;Talk&nbsp;"> <INPUT TYPE="reset" VALUE="Reset" onClick="window.setTimeout('elizaReset()',100)"></TD>
 						</TR>
 						</FORM>

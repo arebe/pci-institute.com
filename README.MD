@@ -25,7 +25,7 @@ DataLore
 --------
 **Proprietary Career Institute** was created as part of the [DataLore Hackathon](http://www.datalorehack.com/) at MIT Media Lab.
 
-*Created by*: Team 7: For-Profit Schools
+*Created by* Team 7 For-Profit Schools:
 - Toby Merrill
 - Teresa Gorman 
 - Sarah Henry
