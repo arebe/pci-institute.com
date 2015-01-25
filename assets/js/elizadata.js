@@ -263,29 +263,29 @@ var elizaKeywords = [
  ["*", ["goto loan"]]
 ]],
 ["contact", 20, [
- ["*",
+ ["*", [
      "Visit our \"Contact\" page to continue our conversation and learn more about this great investment opportunity.",
      "Follow us on Twitter for 140-character insights about how to align your education with a meaningful career."
- ] 
+ ]] 
 ]],
 ["email", 20, [
  ["*", ["goto contact"]]
 ]],
 ["data", 20, [
- ["*",
+ ["*", [
      "Graduation rates and other disclosures are available in PDF format. You may find them somewhere on our website.",
      "We release data about our graduates' success in the workforce in a manner technically consistent with federal law.",
      "Sorry, I cannot seem to find our federal disclosure materials. But rest assured: we make them available \"clearly and conspicuously\" as required by law."
- ] 
+ ]]
 ]],
 ["disclosure", 20, [
  ["*", ["goto data"]]
 ]],
 ["course", 20, [
- ["*",
+ ["*", [
      "Our curriculum will teach you how to structure your finances to capture the largest amount of public funds.",
      "Our writing center empowers students to craft beautifully vague copy for all of their marketing needs."
- ] 
+ ]]
 ]],
 ["class", 20, [
  ["*", ["goto course"]]
