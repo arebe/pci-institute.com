@@ -167,32 +167,44 @@ function elizaStep() {
 	</div>
 	<!-- container -->
 	<section class="container">
-		<div class="heading">
-			<!-- Heading -->
-			<h2>Our Students</h2>
-		</div>
 		<div class="row">
-			<div class="col-md-4">
+			<div class="col-md-5">
+				<h2>Our Students</h2>
 				<img src="assets/images/1.jpg" alt="" class="img-responsive">
 			</div>
-			<div class="col-md-8">
+			<div class="col-md-6">
 				<!-- toby bot -->
-				<div class="chatbot">
-					<CENTER>
-					<P>&nbsp;</P>
-					<H3>Chat with Toby!</H3>
-					<TABLE BORDER="0" CELLSPACING="10" CELLPADDING="0">
-					<FORM NAME="e_form" onsubmit="elizaStep();return false">
-					<TR><TD COLSPAN="2"><TEXTAREA NAME="e_display" COLS="60" ROWS="20"></TEXTAREA></TD></TR>
-					<TR VALIGN="middle">
-						<TD><INPUT TYPE="text" NAME="e_input" SIZE="50"></TD>
-						<TD ALIGN="right"><INPUT TYPE="submit" VALUE="&nbsp;Talk&nbsp;"> <INPUT TYPE="reset" VALUE="Reset" onClick="window.setTimeout('elizaReset()',100)"></TD>
-					</TR>
-					</FORM>
-					</TABLE>
-					</CENTER>
-			    </div>
 
+				<div class="row featured-box">
+                    <div class="col-md-3 col-sm-6 col-xs-6">
+                        <!-- Team Member -->
+                        <div class="team-member toby">
+                            <!-- Image Hover Block -->
+                            <div class="member-img">
+                                <!-- Image  -->
+                                <img class="img-responsive" src="assets/images/photo-2.jpg" alt="toby bot">
+                            </div>
+                        </div>
+                    </div>
+                    
+                
+
+					<div class="chatbot">
+						<CENTER>
+						<P>&nbsp;</P>
+						<H3>Chat with Toby!</H3>
+						<TABLE BORDER="0" CELLSPACING="10" CELLPADDING="0">
+						<FORM NAME="e_form" onsubmit="elizaStep();return false">
+						<TR><TD COLSPAN="2"><TEXTAREA NAME="e_display" COLS="60" ROWS="20"></TEXTAREA></TD></TR>
+						<TR VALIGN="middle">
+							<TD><INPUT TYPE="text" NAME="e_input" SIZE="50"></TD>
+							<TD ALIGN="right"><INPUT TYPE="submit" VALUE="&nbsp;Talk&nbsp;"> <INPUT TYPE="reset" VALUE="Reset" onClick="window.setTimeout('elizaReset()',100)"></TD>
+						</TR>
+						</FORM>
+						</TABLE>
+						</CENTER>
+				    </div>
+			    </div>
 			</div>
 		</div>
 	</section>

@@ -714,6 +714,13 @@ nav#filter {
         border: 1px solid rgb(218, 218, 218);
     }
 
+.toby {
+    position: absolute;
+    z-index: 2;
+    float: right;
+
+}
+
 .team-socials {
     margin: 15px 0;
     display: block;

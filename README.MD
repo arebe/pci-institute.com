@@ -1,6 +1,6 @@
 Proprietary Career Institute 
 ============================
-*A For-Proft Education for Profitable Education*
+*A For-Profit Education for Profitable Education*
 
 *Website*: [pci-institute.com](http://pci-institute.com)
 
