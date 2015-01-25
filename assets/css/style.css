@@ -369,6 +369,20 @@ footer {
         .social a:hover {
             color: #8c0515;
         }
+
+.social-sm {
+    margin: 20px 0;
+}
+
+    .social-sm a {
+        font-size: 16px;
+        margin: 0 5px;
+        color: #8c8c8c;
+    }
+
+        .social-sm a:hover {
+            color: #8c0515;
+        }
 /* Footer */
 .footer1 {
     background: #fff;
