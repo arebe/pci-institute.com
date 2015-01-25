@@ -12,10 +12,10 @@ var elizaInitials = [
 var elizaFinals = [
 "Goodbye.  It was nice talking to you.  We hope you will consider an investment in your future.",
 // additions (not original)
-"Goodbye.  This was really a nice talk.",
-"Goodbye.  I'm looking forward to our next session.",
-"This was a good session, wasn't it -- but time is over now.   Goodbye.",
-"Maybe we could discuss this moreover in our next session ?   Goodbye."
+"Goodbye.  This was really a nice talk. Please let us know when you have applied for federal student loans.",
+"Goodbye.  I'm looking forward to our next session.  We look forward to seeing you on campus.",
+"This was a good session, wasn't it -- but time is over now.  I hope I can share more about our political activities next time we talk.",
+"Maybe we could discuss this moreover in our next session ?  Remember, a brighter future starts with a degree from PCI."
 ];
 
 var elizaQuits = [
@@ -263,29 +263,29 @@ var elizaKeywords = [
  ["*", ["goto loan"]]
 ]],
 ["contact", 20, [
- ["*",
+ ["*", [
      "Visit our \"Contact\" page to continue our conversation and learn more about this great investment opportunity.",
      "Follow us on Twitter for 140-character insights about how to align your education with a meaningful career."
- ] 
+ ]] 
 ]],
 ["email", 20, [
  ["*", ["goto contact"]]
 ]],
 ["data", 20, [
- ["*",
+ ["*", [
      "Graduation rates and other disclosures are available in PDF format. You may find them somewhere on our website.",
      "We release data about our graduates' success in the workforce in a manner technically consistent with federal law.",
      "Sorry, I cannot seem to find our federal disclosure materials. But rest assured: we make them available \"clearly and conspicuously\" as required by law."
- ] 
+ ]]
 ]],
 ["disclosure", 20, [
  ["*", ["goto data"]]
 ]],
 ["course", 20, [
- ["*",
+ ["*", [
      "Our curriculum will teach you how to structure your finances to capture the largest amount of public funds.",
      "Our writing center empowers students to craft beautifully vague copy for all of their marketing needs."
- ] 
+ ]]
 ]],
 ["class", 20, [
  ["*", ["goto course"]]
