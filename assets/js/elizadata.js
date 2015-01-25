@@ -12,10 +12,10 @@ var elizaInitials = [
 var elizaFinals = [
 "Goodbye.  It was nice talking to you.  We hope you will consider an investment in your future.",
 // additions (not original)
-"Goodbye.  This was really a nice talk.",
-"Goodbye.  I'm looking forward to our next session.",
-"This was a good session, wasn't it -- but time is over now.   Goodbye.",
-"Maybe we could discuss this moreover in our next session ?   Goodbye."
+"Goodbye.  This was really a nice talk. Please let us know when you have applied for federal student loans.",
+"Goodbye.  I'm looking forward to our next session.  We look forward to seeing you on campus.",
+"This was a good session, wasn't it -- but time is over now.  I hope I can share more about our political activities next time we talk.",
+"Maybe we could discuss this moreover in our next session ?  Remember, a brighter future starts with a degree from PCI."
 ];
 
 var elizaQuits = [
