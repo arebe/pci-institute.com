@@ -19,6 +19,9 @@
 	<script src="assets/js/html5shiv.js"></script>
 	<script src="assets/js/respond.min.js"></script>
 	<![endif]-->
+
+	<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript" SRC="assets/js/elizabot.js"></SCRIPT>
+	<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript" SRC="assets/js/elizadata.js"></SCRIPT>
 </head>
 <body>
 	<!-- Fixed navbar -->
@@ -45,6 +48,61 @@
 		</div>
 	</div>
 	<!-- /.navbar -->
+
+	<!-- elizabot -->
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!--
+
+var eliza = new ElizaBot();
+var elizaLines = new Array();
+
+var displayCols = 60;
+var displayRows = 20;
+
+function elizaReset() {
+	eliza.reset();
+	elizaLines.length = 0;
+	elizaStep();
+}
+
+function elizaStep() {
+	var f = document.forms.e_form;
+	var userinput = f.e_input.value;
+	if (eliza.quit) {
+		f.e_input.value = '';
+		if (confirm("This session is over.\nStart over?")) elizaReset();
+		f.e_input.focus();
+		return;
+	}
+	else if (userinput != '') {
+		var usr = 'YOU:   ' + userinput;
+		var rpl ='ELIZA: ' + eliza.transform(userinput);
+		elizaLines.push(usr);
+		elizaLines.push(rpl);
+		// display nicely
+		// (fit to textarea with last line free - reserved for extra line caused by word wrap)
+		var temp  = new Array();
+		var l = 0;
+		for (var i=elizaLines.length-1; i>=0; i--) {
+			l += 1 + Math.floor(elizaLines[i].length/displayCols);
+			if (l >= displayRows) break
+			else temp.push(elizaLines[i]);
+		}
+		elizaLines = temp.reverse();
+		f.e_display.value = elizaLines.join('\n');
+	}
+	else if (elizaLines.length == 0) {
+		// no input and no saved lines -> output initial
+		var initial = 'ELIZA: ' + eliza.getInitial();
+		elizaLines.push(initial);
+		f.e_display.value = initial + '\n';
+	}
+	f.e_input.value = '';
+	f.e_input.focus();
+}
+
+//-->
+</SCRIPT>
 
 	<!-- Header -->
 	<header id="head">
@@ -117,11 +175,23 @@
 				<img src="assets/images/1.jpg" alt="" class="img-responsive">
 			</div>
 			<div class="col-md-8">
-				<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
-				<blockquote class="blockquote-1">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid</p>
-					<small>Someone famous in <cite title="Source Title">Source Title</cite></small>
-				</blockquote>
+				<!-- toby bot -->
+				<div class="chatbot">
+					<CENTER>
+					<P>&nbsp;</P>
+					<H3>Chat with Toby!</H3>
+					<TABLE BORDER="0" CELLSPACING="10" CELLPADDING="0">
+					<FORM NAME="e_form" onsubmit="elizaStep();return false">
+					<TR><TD COLSPAN="2"><TEXTAREA NAME="e_display" COLS="60" ROWS="20"></TEXTAREA></TD></TR>
+					<TR VALIGN="middle">
+						<TD><INPUT TYPE="text" NAME="e_input" SIZE="50"></TD>
+						<TD ALIGN="right"><INPUT TYPE="submit" VALUE="&nbsp;Talk&nbsp;"> <INPUT TYPE="reset" VALUE="Reset" onClick="window.setTimeout('elizaReset()',100)"></TD>
+					</TR>
+					</FORM>
+					</TABLE>
+					</CENTER>
+			    </div>
+
 			</div>
 		</div>
 	</section>
@@ -174,5 +244,7 @@
 	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 	<script src="assets/js/jquery.cslider.js"></script>
 	<script src="assets/js/custom.js"></script>
+
+
 </body>
 </html>
