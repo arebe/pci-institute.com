@@ -717,8 +717,15 @@ nav#filter {
 .toby {
     position: absolute;
     z-index: 2;
+    display: inline-block;
     float: right;
 
+}
+
+.toby .member-img{
+    float: right;
+
+    
 }
 
 .team-socials {
