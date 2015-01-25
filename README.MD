@@ -1,9 +1,11 @@
 Proprietary Career Institute 
 ============================
-
-*Created by*: Rachel B [arebe.us](http://arebe.us) and Team 7 
+*A For-Proft Education for Profitable Education*
 
 *Website*: [pci-institute.com](http://pci-institute.com)
+
+The **Proprietary Career Institute** is dedicated to teaching students how to build the For-Profit Colleges of tomorrow. We believe in maximizing investment and expanding education as a profitable industry. This is both an opportunity for potential investors and aspiring students to get in at the ground floor of a multi-billion dollar industry.
+
 
 What's all this?
 ----------------
@@ -21,4 +23,12 @@ Our analysis draws data from several sources to evaluate the current state of fo
 
 DataLore
 --------
-*Proprietary Career Institute* was created as part of the [DataLore Hackathon](http://www.datalorehack.com/) at MIT Media Lab.
+**Proprietary Career Institute** was created as part of the [DataLore Hackathon](http://www.datalorehack.com/) at MIT Media Lab.
+
+*Created by*: Team 7: For-Profit Schools
+- Toby Merrill
+- Teresa Gorman 
+- Sarah Henry
+- [Rachel Boyce](http://arebe.us)
+- Micah Lanier
+- Alex Auriema 
